@@ -8,8 +8,8 @@ class Tag extends Model
 {
     protected $fillable = ['nama','slug'];
 
-    public function tags()
+    public function bukus()
     {
-      return $this->belongsToMany(Buku::class);
+        return $this->belongsToMany(Buku::class);
     }
 }

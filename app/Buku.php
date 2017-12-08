@@ -8,7 +8,7 @@ class Buku extends Model
 {
   protected $fillable = ['judul', 'slug', 'halaman', 'tahun'];
 
-  public function bukus()
+  public function tags()
   {
     return $this->belongsToMany(Tag::class);
   }
